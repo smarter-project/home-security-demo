@@ -1,9 +1,0 @@
-dependencies:
-- name: home-ha-mock
-  repository: https://smarter-project.github.io/home-ha-mock
-  version: 2.0.2
-- name: home-orchestrator
-  repository: https://smarter-project.github.io/home-orchestrator
-  version: 2.0.4
-digest: sha256:fd53581c8cde638d8ec8bcf0112f4b3eb8bea97f52ac8c55add0085f34b6b063
-generated: "2025-03-06T12:59:49.370172-06:00"
