@@ -1,5 +1,7 @@
 # Smart-home security demo using AI - LLMs
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/home-security-demo)](https://artifacthub.io/packages/search?repo=home-security-demo)
+
 ## Motivation
 
 A demo using LLM At the edge as part of home security application
