@@ -3,17 +3,17 @@ name: home-security-demo
 description: Home security edgeAI  chart
 home: https://getsmarter.io
 type: application
-version: 2.0.3
+version: 2.0.4
 appVersion: "2.0.0"
 icon: https://github.com/smarter-project/documentation/raw/main/ARM1636_Project_Logo_ST2_RGB_V1.png
 kubeVersion: ">=1.18.0-0"
 
 dependencies:
   - name: home-ha-mock
-    version: 2.0.3
+    version: 2.0.5
     repository: https://smarter-project.github.io/home-ha-mock
   - name: home-orchestrator
-    version: 2.0.4
+    version: 2.0.7
     repository: https://smarter-project.github.io/home-orchestrator
 sources:
   - https://github.com/smarter-project/home-security-demo
