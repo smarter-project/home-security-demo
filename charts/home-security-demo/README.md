@@ -1,19 +1,17 @@
 # security mvp2
 
-This chart deploys security mvp2 components.
-It assumes that smarter-edge is installed.
-
-For more information on smarter go to https://getsmarter.io
+This chart deploys home security demo mvp2 components.
 
 ## TL;DR
 
 ```console
-helm install --create-namespace --namespace mvp2 security-mvp2  security-demo-mvp2
+helm repo add home-security-demo https://smarter-project.github.io/home-security-demo/
+helm install --create-namespace --namespace <namespace to use> --set "home-ha-mock.configuration.urlLog=<URL to download replay lag>" home-security-demo/home-security-demo
 ```
 
 # Overview
 
-The scureiry mpv2 uses ML models to demonstrate a home security application.
+The home security mpv2 uses ML models to demonstrate a home security application replaying events from home assistant.
 
 # Prerequisites
 
@@ -34,7 +32,5 @@ $ helm delete security-mvp2 --namespace mpv2
 
 | Name | Description | Value |
 | ---- | ----------- | ----- |
+| home-ha-mock.configuration.urlLog | URL to download replay log from | | 
 
-# Notes
-
-- Make sure you set both the common parameters for things to work properly.
