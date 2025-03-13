@@ -14,6 +14,39 @@ entries:
         url: https://smarter-project.github.io/home-security-demo/pgp_keys.asc
     apiVersion: v2
     appVersion: 2.0.0
+    created: "2025-03-13T15:48:41.764550919Z"
+    dependencies:
+    - name: home-ha-mock
+      repository: https://smarter-project.github.io/home-ha-mock
+      version: 2.0.5
+    - name: home-orchestrator
+      repository: https://smarter-project.github.io/home-orchestrator
+      version: 2.0.8
+    description: Home security edgeAI  chart
+    digest: 1ee69e971aba7b71f051cb52a73e6da94a72afa660b56a33fc0ff628409175a3
+    home: https://getsmarter.io
+    icon: https://github.com/smarter-project/documentation/raw/main/ARM1636_Project_Logo_ST2_RGB_V1.png
+    kubeVersion: '>=1.18.0-0'
+    name: home-security-demo
+    sources:
+    - https://github.com/smarter-project/home-security-demo
+    type: application
+    urls:
+    - https://github.com/smarter-project/home-security-demo/releases/download/home-security-demo-2.0.6/home-security-demo-2.0.6.tgz
+    version: 2.0.6
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/maintainers: |
+        - name: Alexandre Ferreira
+          email: alexandref75@gmail.com
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 82AD709FEC4ECA4C84B093889BDC9DE410CFC23B
+        url: https://smarter-project.github.io/home-security-demo/pgp_keys.asc
+    apiVersion: v2
+    appVersion: 2.0.0
     created: "2025-03-12T15:28:55.729762567Z"
     dependencies:
     - name: home-ha-mock
@@ -133,4 +166,4 @@ entries:
     urls:
     - https://github.com/smarter-project/home-security-demo/releases/download/home-security-demo-2.0.2/home-security-demo-2.0.2.tgz
     version: 2.0.2
-generated: "2025-03-12T15:28:55.729780461Z"
+generated: "2025-03-13T15:48:41.76457836Z"
