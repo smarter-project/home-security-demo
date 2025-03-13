@@ -3,7 +3,7 @@ name: home-security-demo
 description: Home security edgeAI  chart
 home: https://getsmarter.io
 type: application
-version: 2.0.5
+version: 2.0.6
 appVersion: "2.0.0"
 icon: https://github.com/smarter-project/documentation/raw/main/ARM1636_Project_Logo_ST2_RGB_V1.png
 kubeVersion: ">=1.18.0-0"
