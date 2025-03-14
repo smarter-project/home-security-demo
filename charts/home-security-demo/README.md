@@ -11,6 +11,7 @@ helm install \
      --set "home-ha-mock.configuration.urlLog=<URL to download replay lag>" \
      --set "home-ha-mock.configuration.model=llama3.2-vision:latest" \
      --set "home-orchestrator.configuration.ollamaVersion=0.6.0" \
+     --set "home-orchestrator.configuration.hostVolumePath=/srv/shared-container-volumes/ollama" \
      <local name> home-security-demo/home-security-demo
 ```
 
@@ -18,7 +19,9 @@ home-ha-mock.configuration.urlLog is required since there is no default value an
 
 home-ha-mock.configuration.model is not required since the default is to use the model llama3.2-vision:latest.
 
-home-orchestrator.configuration.ollamaVersion byt default uses latest but if already downloaded will not update, If you want a particular version set it here.
+home-orchestrator.configuration.ollamaVersion by default uses latest but if already downloaded will not update, If you want a particular version set it here.
+
+home-orchestrator.configuration.hostVolumePath by "/srv/shared-container-volumes/ollama" (correct for linux hosts but for MacOS use /opt/shared-container-volumes/ollama).
 
 # Overview
 
@@ -46,4 +49,4 @@ $ helm delete <local name> --namespace <namespace used>
 | home-ha-mock.configuration.urlLog | URL to download replay log from | | 
 | home-ha-mock.configuration.model | Model to be used, need to be supported by ollama | llama3.2-vision:latest | 
 | home-orchestrator.configuration.ollamaVersion | Ollama container version | latest | 
-
+| home-orchestrator.configuration.hostVolumePath | Host volume for storing models | /srv/shared-container-volumes/ollama | 
