@@ -13,7 +13,7 @@ dependencies:
     version: 2.0.5
     repository: https://smarter-project.github.io/home-ha-mock
   - name: home-orchestrator
-    version: 2.0.10
+    version: 2.0.11
     repository: https://smarter-project.github.io/home-orchestrator
 sources:
   - https://github.com/smarter-project/home-security-demo
