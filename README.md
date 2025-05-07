@@ -13,7 +13,7 @@ Charts that install the demo at a k3s cluster
 ```
 helm repo add home-security-demo https://smarter-project.github.io/home-security-demo/
 helm install \
-     --set "home-ha-mock.configuration.urlLog=<URL to download replay lag>" \
+     --set "home-ha-mock.configuration.urlLog=<URL to download replay log>" \
      --set "home-ha-mock.configuration.model=llama3.2-vision:latest" \
      --set "home-orchestrator.configuration.ollamaVersion=0.6.0" \
      --set "home-orchestrator.configuration.model=llama3.2-vision:latest" \
